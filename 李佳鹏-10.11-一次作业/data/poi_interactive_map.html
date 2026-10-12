@@ -1,0 +1,3411 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_83886342c78c59281a2795e69f900224 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div style="position: fixed; top: 10px; right: 10px; width: 140px; 
+            background: white; border: 2px solid grey; z-index: 9999; 
+            font-size: 13px; padding: 10px; border-radius: 4px;">
+<p style="margin: 0 0 5px 0;"><strong>POI类型</strong></p>
+<p style="margin: 2px 0;"><i class="fa fa-circle" style="color:red"></i> 医院</p>
+<p style="margin: 2px 0;"><i class="fa fa-circle" style="color:blue"></i> 学校</p>
+<p style="margin: 2px 0;"><i class="fa fa-circle" style="color:purple"></i> 咖啡厅</p>
+<p style="margin: 2px 0;"><i class="fa fa-circle" style="color:green"></i> 地铁站</p>
+</div>
+    
+            <div class="folium-map" id="map_83886342c78c59281a2795e69f900224" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_83886342c78c59281a2795e69f900224 = L.map(
+                "map_83886342c78c59281a2795e69f900224",
+                {
+                    center: [31.170464009999996, 108.37640864999999],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6fd581eef5ef822343988b8e1ff3c7fa = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6fd581eef5ef822343988b8e1ff3c7fa.addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+            var circle_marker_e81c02dde3c8be4708bc187aa0f57953 = L.circleMarker(
+                [31.165553, 108.404923],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_5b43f9c5e5c9aa9c7eb1f884885159c6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_95d0beb58400cddcf41eaba2de244c1f = $(`<div id="html_95d0beb58400cddcf41eaba2de244c1f" style="width: 100.0%; height: 100.0%;"><b>开州区人民医院</b><br>类别: 医院<br>行政区: 开州区<br>地址: 安康街8号</div>`)[0];
+                popup_5b43f9c5e5c9aa9c7eb1f884885159c6.setContent(html_95d0beb58400cddcf41eaba2de244c1f);
+            
+        
+
+        circle_marker_e81c02dde3c8be4708bc187aa0f57953.bindPopup(popup_5b43f9c5e5c9aa9c7eb1f884885159c6)
+        ;
+
+        
+    
+    
+            circle_marker_e81c02dde3c8be4708bc187aa0f57953.bindTooltip(
+                `<div>
+                     [医院] 开州区人民医院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f01f1024915afd96210afdfe6820c53 = L.circleMarker(
+                [31.160621, 108.381932],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_ac08b884d3aaf710f4fb0bcc0b793ff6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1667d8d0eefe380e827948853e33f0cb = $(`<div id="html_1667d8d0eefe380e827948853e33f0cb" style="width: 100.0%; height: 100.0%;"><b>开州区中医院</b><br>类别: 医院<br>行政区: 开州区<br>地址: 开州大道西206号</div>`)[0];
+                popup_ac08b884d3aaf710f4fb0bcc0b793ff6.setContent(html_1667d8d0eefe380e827948853e33f0cb);
+            
+        
+
+        circle_marker_2f01f1024915afd96210afdfe6820c53.bindPopup(popup_ac08b884d3aaf710f4fb0bcc0b793ff6)
+        ;
+
+        
+    
+    
+            circle_marker_2f01f1024915afd96210afdfe6820c53.bindTooltip(
+                `<div>
+                     [医院] 开州区中医院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae54afc1a8c4ec11f67e3aff4d5c821e = L.circleMarker(
+                [31.152242, 108.367393],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_d1531c6209c0cacaf9df0c74a404f803 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_982ef99e655bddb31047d16e7ccefa2e = $(`<div id="html_982ef99e655bddb31047d16e7ccefa2e" style="width: 100.0%; height: 100.0%;"><b>开州博爱医院</b><br>类别: 医院<br>行政区: 开州区<br>地址: 兴合社区学林街48号</div>`)[0];
+                popup_d1531c6209c0cacaf9df0c74a404f803.setContent(html_982ef99e655bddb31047d16e7ccefa2e);
+            
+        
+
+        circle_marker_ae54afc1a8c4ec11f67e3aff4d5c821e.bindPopup(popup_d1531c6209c0cacaf9df0c74a404f803)
+        ;
+
+        
+    
+    
+            circle_marker_ae54afc1a8c4ec11f67e3aff4d5c821e.bindTooltip(
+                `<div>
+                     [医院] 开州博爱医院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b7284af08e22301789bccbbb43c517b4 = L.circleMarker(
+                [31.171538, 108.41195],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_441328f70e60394430810a041c07d4ea = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_32a4bd449f9afc2d2f42cc56c25053d5 = $(`<div id="html_32a4bd449f9afc2d2f42cc56c25053d5" style="width: 100.0%; height: 100.0%;"><b>重庆开州康桥医院</b><br>类别: 医院<br>行政区: 开州区<br>地址: 开州大道花样年华小区</div>`)[0];
+                popup_441328f70e60394430810a041c07d4ea.setContent(html_32a4bd449f9afc2d2f42cc56c25053d5);
+            
+        
+
+        circle_marker_b7284af08e22301789bccbbb43c517b4.bindPopup(popup_441328f70e60394430810a041c07d4ea)
+        ;
+
+        
+    
+    
+            circle_marker_b7284af08e22301789bccbbb43c517b4.bindTooltip(
+                `<div>
+                     [医院] 重庆开州康桥医院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c5b1383f8ef6f1ee1b06ba04342468a1 = L.circleMarker(
+                [31.285329, 108.480244],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_a1fcdab48e822fd783fbef3ff862fab6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2a3a782ba2594bb118ca249d7f321f1b = $(`<div id="html_2a3a782ba2594bb118ca249d7f321f1b" style="width: 100.0%; height: 100.0%;"><b>开州区郭家镇卫生院</b><br>类别: 医院<br>行政区: 开州区<br>地址: S102(东里街)</div>`)[0];
+                popup_a1fcdab48e822fd783fbef3ff862fab6.setContent(html_2a3a782ba2594bb118ca249d7f321f1b);
+            
+        
+
+        circle_marker_c5b1383f8ef6f1ee1b06ba04342468a1.bindPopup(popup_a1fcdab48e822fd783fbef3ff862fab6)
+        ;
+
+        
+    
+    
+            circle_marker_c5b1383f8ef6f1ee1b06ba04342468a1.bindTooltip(
+                `<div>
+                     [医院] 开州区郭家镇卫生院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b3305bf616f6ed140d099a1cfa1895c1 = L.circleMarker(
+                [31.098885, 108.225592],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_ed991ff63aab0b36b1010150c25b8905 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_eee9ebb8288b9beaea6848242c3d72fd = $(`<div id="html_eee9ebb8288b9beaea6848242c3d72fd" style="width: 100.0%; height: 100.0%;"><b>重庆市开州区第三人民医院</b><br>类别: 医院<br>行政区: 开州区<br>地址: 正街109号</div>`)[0];
+                popup_ed991ff63aab0b36b1010150c25b8905.setContent(html_eee9ebb8288b9beaea6848242c3d72fd);
+            
+        
+
+        circle_marker_b3305bf616f6ed140d099a1cfa1895c1.bindPopup(popup_ed991ff63aab0b36b1010150c25b8905)
+        ;
+
+        
+    
+    
+            circle_marker_b3305bf616f6ed140d099a1cfa1895c1.bindTooltip(
+                `<div>
+                     [医院] 重庆市开州区第三人民医院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_27f0e428a1c37d339bdbc3554cf32e2e = L.circleMarker(
+                [31.162644, 108.370076],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_010c16e40b993d0f2663695695b53733 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4b7c8d445a7f40f3df78f950ece42abe = $(`<div id="html_4b7c8d445a7f40f3df78f950ece42abe" style="width: 100.0%; height: 100.0%;"><b>开州区云枫街道社区卫生服务中心</b><br>类别: 医院<br>行政区: 开州区<br>地址: 睡佛路</div>`)[0];
+                popup_010c16e40b993d0f2663695695b53733.setContent(html_4b7c8d445a7f40f3df78f950ece42abe);
+            
+        
+
+        circle_marker_27f0e428a1c37d339bdbc3554cf32e2e.bindPopup(popup_010c16e40b993d0f2663695695b53733)
+        ;
+
+        
+    
+    
+            circle_marker_27f0e428a1c37d339bdbc3554cf32e2e.bindTooltip(
+                `<div>
+                     [医院] 开州区云枫街道社区卫生服务中心
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e64be5c4a8357d02f6dd3d7ceaeb448d = L.circleMarker(
+                [30.993425, 108.306935],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_1ace8889841ecf0dd7031fda5495be6f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3cf655c19ed5de51f1eefef39e84bb4b = $(`<div id="html_3cf655c19ed5de51f1eefef39e84bb4b" style="width: 100.0%; height: 100.0%;"><b>重庆市开州区长沙镇中心卫生院</b><br>类别: 医院<br>行政区: 开州区<br>地址: 古迹街与锦橙路交叉口东北150米开州区长沙镇红十字医院附近</div>`)[0];
+                popup_1ace8889841ecf0dd7031fda5495be6f.setContent(html_3cf655c19ed5de51f1eefef39e84bb4b);
+            
+        
+
+        circle_marker_e64be5c4a8357d02f6dd3d7ceaeb448d.bindPopup(popup_1ace8889841ecf0dd7031fda5495be6f)
+        ;
+
+        
+    
+    
+            circle_marker_e64be5c4a8357d02f6dd3d7ceaeb448d.bindTooltip(
+                `<div>
+                     [医院] 重庆市开州区长沙镇中心卫生院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c21ee2e175de54c9d32c7ace5231b08 = L.circleMarker(
+                [31.169822, 108.393816],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_50f6670a350e3817cf5189aba03df473 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_74edb6271e0b193cbeea9c8a90b947ee = $(`<div id="html_74edb6271e0b193cbeea9c8a90b947ee" style="width: 100.0%; height: 100.0%;"><b>开州区汉丰街道社区公共卫生中心</b><br>类别: 医院<br>行政区: 开州区<br>地址: 滨湖中路865-883</div>`)[0];
+                popup_50f6670a350e3817cf5189aba03df473.setContent(html_74edb6271e0b193cbeea9c8a90b947ee);
+            
+        
+
+        circle_marker_2c21ee2e175de54c9d32c7ace5231b08.bindPopup(popup_50f6670a350e3817cf5189aba03df473)
+        ;
+
+        
+    
+    
+            circle_marker_2c21ee2e175de54c9d32c7ace5231b08.bindTooltip(
+                `<div>
+                     [医院] 开州区汉丰街道社区公共卫生中心
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5c68a5b9a3b10c6f31821f8837283352 = L.circleMarker(
+                [31.038729, 108.133326],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_a6be53934e9fc2e9054f5545b228432e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fe48e0a6ef10574a864fe8583e37042b = $(`<div id="html_fe48e0a6ef10574a864fe8583e37042b" style="width: 100.0%; height: 100.0%;"><b>开州区铁桥镇中心卫生院</b><br>类别: 医院<br>行政区: 开州区<br>地址: 铁桥镇双桥街371号</div>`)[0];
+                popup_a6be53934e9fc2e9054f5545b228432e.setContent(html_fe48e0a6ef10574a864fe8583e37042b);
+            
+        
+
+        circle_marker_5c68a5b9a3b10c6f31821f8837283352.bindPopup(popup_a6be53934e9fc2e9054f5545b228432e)
+        ;
+
+        
+    
+    
+            circle_marker_5c68a5b9a3b10c6f31821f8837283352.bindTooltip(
+                `<div>
+                     [医院] 开州区铁桥镇中心卫生院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e2c2771157805a45dfd94b2690bdd39 = L.circleMarker(
+                [31.087084, 108.424211],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_623c4575283524527d83973ad9eb410b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_db249e273b4b0651e7988a705e1b2a9d = $(`<div id="html_db249e273b4b0651e7988a705e1b2a9d" style="width: 100.0%; height: 100.0%;"><b>开州区赵家街道社区卫生服务中心</b><br>类别: 医院<br>行政区: 开州区<br>地址: 勇胜街与明远街交叉口西北50米</div>`)[0];
+                popup_623c4575283524527d83973ad9eb410b.setContent(html_db249e273b4b0651e7988a705e1b2a9d);
+            
+        
+
+        circle_marker_9e2c2771157805a45dfd94b2690bdd39.bindPopup(popup_623c4575283524527d83973ad9eb410b)
+        ;
+
+        
+    
+    
+            circle_marker_9e2c2771157805a45dfd94b2690bdd39.bindTooltip(
+                `<div>
+                     [医院] 开州区赵家街道社区卫生服务中心
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_005e60f1e256d560a7b2d03d19221ae2 = L.circleMarker(
+                [31.366635, 108.246539],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_454e95fa6624e2004ec96bf927c7c609 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fd0dd75c7bd4753cdcfa4410c98b1c48 = $(`<div id="html_fd0dd75c7bd4753cdcfa4410c98b1c48" style="width: 100.0%; height: 100.0%;"><b>重庆市开州区高桥镇卫生院</b><br>类别: 医院<br>行政区: 开州区<br>地址: 509县道与欣荣街交叉口东180米</div>`)[0];
+                popup_454e95fa6624e2004ec96bf927c7c609.setContent(html_fd0dd75c7bd4753cdcfa4410c98b1c48);
+            
+        
+
+        circle_marker_005e60f1e256d560a7b2d03d19221ae2.bindPopup(popup_454e95fa6624e2004ec96bf927c7c609)
+        ;
+
+        
+    
+    
+            circle_marker_005e60f1e256d560a7b2d03d19221ae2.bindTooltip(
+                `<div>
+                     [医院] 重庆市开州区高桥镇卫生院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d823230a656f038066a5b0c2299f8c86 = L.circleMarker(
+                [31.505775, 108.458125],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_7adceebe4ba0101a1af65cd3e8385982 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4d9886a17c4e964db602d3603c48c76d = $(`<div id="html_4d9886a17c4e964db602d3603c48c76d" style="width: 100.0%; height: 100.0%;"><b>大进镇中心卫生院</b><br>类别: 医院<br>行政区: 开州区<br>地址: 双万街与城黔路交叉口东460米</div>`)[0];
+                popup_7adceebe4ba0101a1af65cd3e8385982.setContent(html_4d9886a17c4e964db602d3603c48c76d);
+            
+        
+
+        circle_marker_d823230a656f038066a5b0c2299f8c86.bindPopup(popup_7adceebe4ba0101a1af65cd3e8385982)
+        ;
+
+        
+    
+    
+            circle_marker_d823230a656f038066a5b0c2299f8c86.bindTooltip(
+                `<div>
+                     [医院] 大进镇中心卫生院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d23000f2c371568ba86876189073b9ac = L.circleMarker(
+                [31.104567, 108.219814],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_1be102b41bb702fcfbca96bdaae86093 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_48fb02145ef3546a596cbec9b2ca5f99 = $(`<div id="html_48fb02145ef3546a596cbec9b2ca5f99" style="width: 100.0%; height: 100.0%;"><b>江里医院</b><br>类别: 医院<br>行政区: 开州区<br>地址: 208省道东150米</div>`)[0];
+                popup_1be102b41bb702fcfbca96bdaae86093.setContent(html_48fb02145ef3546a596cbec9b2ca5f99);
+            
+        
+
+        circle_marker_d23000f2c371568ba86876189073b9ac.bindPopup(popup_1be102b41bb702fcfbca96bdaae86093)
+        ;
+
+        
+    
+    
+            circle_marker_d23000f2c371568ba86876189073b9ac.bindTooltip(
+                `<div>
+                     [医院] 江里医院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9b7dd9fa68ebc81ae8263b0f5c33cda7 = L.circleMarker(
+                [31.157745, 108.186332],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_bb1b16158d650c9e776df36b8f4b5fb9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_aba17544ba822503193ed68b25762433 = $(`<div id="html_aba17544ba822503193ed68b25762433" style="width: 100.0%; height: 100.0%;"><b>开州区中和镇当阳村卫生室(中医阁)</b><br>类别: 医院<br>行政区: 开州区<br>地址: 映阳街416号</div>`)[0];
+                popup_bb1b16158d650c9e776df36b8f4b5fb9.setContent(html_aba17544ba822503193ed68b25762433);
+            
+        
+
+        circle_marker_9b7dd9fa68ebc81ae8263b0f5c33cda7.bindPopup(popup_bb1b16158d650c9e776df36b8f4b5fb9)
+        ;
+
+        
+    
+    
+            circle_marker_9b7dd9fa68ebc81ae8263b0f5c33cda7.bindTooltip(
+                `<div>
+                     [医院] 开州区中和镇当阳村卫生室(中医阁)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd4bbb82b1fdf70ec7c06dc632bd8447 = L.circleMarker(
+                [31.158886, 108.37733],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_e5030b9da5d8108f8f5c3257445321b6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f1b8448b6839472138900796b62ff001 = $(`<div id="html_f1b8448b6839472138900796b62ff001" style="width: 100.0%; height: 100.0%;"><b>重庆开州坪桥医院</b><br>类别: 医院<br>行政区: 开州区<br>地址: 云枫街道开州大道西307号(嘉和居西北门西100米)</div>`)[0];
+                popup_e5030b9da5d8108f8f5c3257445321b6.setContent(html_f1b8448b6839472138900796b62ff001);
+            
+        
+
+        circle_marker_fd4bbb82b1fdf70ec7c06dc632bd8447.bindPopup(popup_e5030b9da5d8108f8f5c3257445321b6)
+        ;
+
+        
+    
+    
+            circle_marker_fd4bbb82b1fdf70ec7c06dc632bd8447.bindTooltip(
+                `<div>
+                     [医院] 重庆开州坪桥医院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4581d4210dd674de51dba3ba63c0f2df = L.circleMarker(
+                [31.355742, 108.519378],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_e78522be63b6094408382063a54f8b41 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2a547d930d513ced4e4d760fd672ae63 = $(`<div id="html_2a547d930d513ced4e4d760fd672ae63" style="width: 100.0%; height: 100.0%;"><b>重庆市开州区温泉镇中心卫生院</b><br>类别: 医院<br>行政区: 开州区<br>地址: 泉兴街388号</div>`)[0];
+                popup_e78522be63b6094408382063a54f8b41.setContent(html_2a547d930d513ced4e4d760fd672ae63);
+            
+        
+
+        circle_marker_4581d4210dd674de51dba3ba63c0f2df.bindPopup(popup_e78522be63b6094408382063a54f8b41)
+        ;
+
+        
+    
+    
+            circle_marker_4581d4210dd674de51dba3ba63c0f2df.bindTooltip(
+                `<div>
+                     [医院] 重庆市开州区温泉镇中心卫生院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ea32ef8ba595ffb7440ea58908cf2464 = L.circleMarker(
+                [31.156549, 108.382799],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_ada48328b954f2d1fe12366bdb08feeb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_691726628b406f97d144466f62fca05c = $(`<div id="html_691726628b406f97d144466f62fca05c" style="width: 100.0%; height: 100.0%;"><b>开州新城中西医结合医院</b><br>类别: 医院<br>行政区: 开州区<br>地址: 裕安街与南山西路交叉口北80米</div>`)[0];
+                popup_ada48328b954f2d1fe12366bdb08feeb.setContent(html_691726628b406f97d144466f62fca05c);
+            
+        
+
+        circle_marker_ea32ef8ba595ffb7440ea58908cf2464.bindPopup(popup_ada48328b954f2d1fe12366bdb08feeb)
+        ;
+
+        
+    
+    
+            circle_marker_ea32ef8ba595ffb7440ea58908cf2464.bindTooltip(
+                `<div>
+                     [医院] 开州新城中西医结合医院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba6b09fdf5ced3481c3de9eef50d171a = L.circleMarker(
+                [30.907125, 108.163523],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_b102f89374caff81c65ba6ca588f8380 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d60a58b8c4d512c03085981a0ea20f7f = $(`<div id="html_d60a58b8c4d512c03085981a0ea20f7f" style="width: 100.0%; height: 100.0%;"><b>岳溪中心卫生院</b><br>类别: 医院<br>行政区: 开州区<br>地址: 岳溪镇岳西街17号</div>`)[0];
+                popup_b102f89374caff81c65ba6ca588f8380.setContent(html_d60a58b8c4d512c03085981a0ea20f7f);
+            
+        
+
+        circle_marker_ba6b09fdf5ced3481c3de9eef50d171a.bindPopup(popup_b102f89374caff81c65ba6ca588f8380)
+        ;
+
+        
+    
+    
+            circle_marker_ba6b09fdf5ced3481c3de9eef50d171a.bindTooltip(
+                `<div>
+                     [医院] 岳溪中心卫生院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e27f825c4d379b913855098fdda537ab = L.circleMarker(
+                [31.199854, 108.425551],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_42844520dc0352f0f738bc5dcc60af4f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_06991a5432bd5c1ed3f56fd665067404 = $(`<div id="html_06991a5432bd5c1ed3f56fd665067404" style="width: 100.0%; height: 100.0%;"><b>开州丰乐街道社区卫生服务中心</b><br>类别: 医院<br>行政区: 开州区<br>地址: 丰胜路与云开路交叉口东南140米</div>`)[0];
+                popup_42844520dc0352f0f738bc5dcc60af4f.setContent(html_06991a5432bd5c1ed3f56fd665067404);
+            
+        
+
+        circle_marker_e27f825c4d379b913855098fdda537ab.bindPopup(popup_42844520dc0352f0f738bc5dcc60af4f)
+        ;
+
+        
+    
+    
+            circle_marker_e27f825c4d379b913855098fdda537ab.bindTooltip(
+                `<div>
+                     [医院] 开州丰乐街道社区卫生服务中心
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c0c0ae655df9d3ce847c68462b49b9c9 = L.circleMarker(
+                [31.214089, 108.345742],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_ed8093eb6273d19dc00fe52a8697bd25 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ee13af2d75ca526df72654b369e88a33 = $(`<div id="html_ee13af2d75ca526df72654b369e88a33" style="width: 100.0%; height: 100.0%;"><b>开州区大德镇卫生院</b><br>类别: 医院<br>行政区: 开州区<br>地址: 大德镇</div>`)[0];
+                popup_ed8093eb6273d19dc00fe52a8697bd25.setContent(html_ee13af2d75ca526df72654b369e88a33);
+            
+        
+
+        circle_marker_c0c0ae655df9d3ce847c68462b49b9c9.bindPopup(popup_ed8093eb6273d19dc00fe52a8697bd25)
+        ;
+
+        
+    
+    
+            circle_marker_c0c0ae655df9d3ce847c68462b49b9c9.bindTooltip(
+                `<div>
+                     [医院] 开州区大德镇卫生院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6dad12546bd8fb29b90020d81284f292 = L.circleMarker(
+                [31.184098, 108.398324],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_e416598f51b9ff0d986d28fcf6fe0b22 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_181da2de2e800534a363d9d59fc553e4 = $(`<div id="html_181da2de2e800534a363d9d59fc553e4" style="width: 100.0%; height: 100.0%;"><b>镇东街道社区卫生服务中心</b><br>类别: 医院<br>行政区: 开州区<br>地址: 陈家坪路32号</div>`)[0];
+                popup_e416598f51b9ff0d986d28fcf6fe0b22.setContent(html_181da2de2e800534a363d9d59fc553e4);
+            
+        
+
+        circle_marker_6dad12546bd8fb29b90020d81284f292.bindPopup(popup_e416598f51b9ff0d986d28fcf6fe0b22)
+        ;
+
+        
+    
+    
+            circle_marker_6dad12546bd8fb29b90020d81284f292.bindTooltip(
+                `<div>
+                     [医院] 镇东街道社区卫生服务中心
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8d778ff0a0a0110285442a35b240064a = L.circleMarker(
+                [31.463584, 108.491164],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_0f937b4dccea73669b4d423606426825 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a95a5597da89fed99d433315879c1cd7 = $(`<div id="html_a95a5597da89fed99d433315879c1cd7" style="width: 100.0%; height: 100.0%;"><b>开州区谭家镇卫生院</b><br>类别: 医院<br>行政区: 开州区<br>地址: 谭家镇双胜街110号</div>`)[0];
+                popup_0f937b4dccea73669b4d423606426825.setContent(html_a95a5597da89fed99d433315879c1cd7);
+            
+        
+
+        circle_marker_8d778ff0a0a0110285442a35b240064a.bindPopup(popup_0f937b4dccea73669b4d423606426825)
+        ;
+
+        
+    
+    
+            circle_marker_8d778ff0a0a0110285442a35b240064a.bindTooltip(
+                `<div>
+                     [医院] 开州区谭家镇卫生院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa66519c186d2a8df17d2c3d5cf5be04 = L.circleMarker(
+                [31.121115, 108.292127],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_48c8a6205292ddb290c272e70174ed21 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_150f9936b13894a32acc4e564cdc9a3b = $(`<div id="html_150f9936b13894a32acc4e564cdc9a3b" style="width: 100.0%; height: 100.0%;"><b>重庆市开州区竹溪镇卫生院</b><br>类别: 医院<br>行政区: 开州区<br>地址: 竹溪镇金竹街80号</div>`)[0];
+                popup_48c8a6205292ddb290c272e70174ed21.setContent(html_150f9936b13894a32acc4e564cdc9a3b);
+            
+        
+
+        circle_marker_aa66519c186d2a8df17d2c3d5cf5be04.bindPopup(popup_48c8a6205292ddb290c272e70174ed21)
+        ;
+
+        
+    
+    
+            circle_marker_aa66519c186d2a8df17d2c3d5cf5be04.bindTooltip(
+                `<div>
+                     [医院] 重庆市开州区竹溪镇卫生院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_97ab177d67c2c9c71f3bafab0cbc6e05 = L.circleMarker(
+                [31.176292, 108.135422],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_55ed914dfa4d3204abbc06e4be6c57c2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_31d7f506da894a8df92510ef2390d4a9 = $(`<div id="html_31d7f506da894a8df92510ef2390d4a9" style="width: 100.0%; height: 100.0%;"><b>重庆市开州区中和镇中心卫生院</b><br>类别: 医院<br>行政区: 开州区<br>地址: 中和镇鹤林街23号</div>`)[0];
+                popup_55ed914dfa4d3204abbc06e4be6c57c2.setContent(html_31d7f506da894a8df92510ef2390d4a9);
+            
+        
+
+        circle_marker_97ab177d67c2c9c71f3bafab0cbc6e05.bindPopup(popup_55ed914dfa4d3204abbc06e4be6c57c2)
+        ;
+
+        
+    
+    
+            circle_marker_97ab177d67c2c9c71f3bafab0cbc6e05.bindTooltip(
+                `<div>
+                     [医院] 重庆市开州区中和镇中心卫生院
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd61ec13e218951ec3569ea71d7bc1c4 = L.circleMarker(
+                [30.994356, 108.311109],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_38d83bcd3f8484fdb6f804643a15cc40 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_00a0f5aa368791bef193fa9f51dd9b23 = $(`<div id="html_00a0f5aa368791bef193fa9f51dd9b23" style="width: 100.0%; height: 100.0%;"><b>重庆市开州区陈家中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: 长沙镇山花街35号附152号</div>`)[0];
+                popup_38d83bcd3f8484fdb6f804643a15cc40.setContent(html_00a0f5aa368791bef193fa9f51dd9b23);
+            
+        
+
+        circle_marker_fd61ec13e218951ec3569ea71d7bc1c4.bindPopup(popup_38d83bcd3f8484fdb6f804643a15cc40)
+        ;
+
+        
+    
+    
+            circle_marker_fd61ec13e218951ec3569ea71d7bc1c4.bindTooltip(
+                `<div>
+                     [学校] 重庆市开州区陈家中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa0d241bff65c558dfa4ccda18daf273 = L.circleMarker(
+                [31.102009, 108.217487],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_e108b43871da8f415b448bf834385052 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f18c726dfe2ebe83c156cc44eed16628 = $(`<div id="html_f18c726dfe2ebe83c156cc44eed16628" style="width: 100.0%; height: 100.0%;"><b>重庆市开州区临江中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: 临江镇大兴街337号</div>`)[0];
+                popup_e108b43871da8f415b448bf834385052.setContent(html_f18c726dfe2ebe83c156cc44eed16628);
+            
+        
+
+        circle_marker_fa0d241bff65c558dfa4ccda18daf273.bindPopup(popup_e108b43871da8f415b448bf834385052)
+        ;
+
+        
+    
+    
+            circle_marker_fa0d241bff65c558dfa4ccda18daf273.bindTooltip(
+                `<div>
+                     [学校] 重庆市开州区临江中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7eb4cab843237b461445478371ac9f4 = L.circleMarker(
+                [31.206101, 108.429042],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_6a83ce3278721ac994c2c5282c7790cb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a87a4e1b69c99650ac7778893ca8897a = $(`<div id="html_a87a4e1b69c99650ac7778893ca8897a" style="width: 100.0%; height: 100.0%;"><b>重庆市开州区丰乐中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: </div>`)[0];
+                popup_6a83ce3278721ac994c2c5282c7790cb.setContent(html_a87a4e1b69c99650ac7778893ca8897a);
+            
+        
+
+        circle_marker_d7eb4cab843237b461445478371ac9f4.bindPopup(popup_6a83ce3278721ac994c2c5282c7790cb)
+        ;
+
+        
+    
+    
+            circle_marker_d7eb4cab843237b461445478371ac9f4.bindTooltip(
+                `<div>
+                     [学校] 重庆市开州区丰乐中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5abe48544a213cd44b0f2dd016700412 = L.circleMarker(
+                [31.158676, 108.365238],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_7a58e6a72a9b60bf2328db1cfc8945bc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_12a03bbeef8092f18ca6617e5058cf01 = $(`<div id="html_12a03bbeef8092f18ca6617e5058cf01" style="width: 100.0%; height: 100.0%;"><b>重庆市开州区实验中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: 桔乡路465号</div>`)[0];
+                popup_7a58e6a72a9b60bf2328db1cfc8945bc.setContent(html_12a03bbeef8092f18ca6617e5058cf01);
+            
+        
+
+        circle_marker_5abe48544a213cd44b0f2dd016700412.bindPopup(popup_7a58e6a72a9b60bf2328db1cfc8945bc)
+        ;
+
+        
+    
+    
+            circle_marker_5abe48544a213cd44b0f2dd016700412.bindTooltip(
+                `<div>
+                     [学校] 重庆市开州区实验中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58a5ec78c0622292187ad7c9e838dab7 = L.circleMarker(
+                [31.162436, 108.385041],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_64cc6d6673ad8232a1ba0d87ad9f43ab = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_81942a3bf535754bb1056111a5c8874e = $(`<div id="html_81942a3bf535754bb1056111a5c8874e" style="width: 100.0%; height: 100.0%;"><b>重庆市开州中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: 开州大道西138号</div>`)[0];
+                popup_64cc6d6673ad8232a1ba0d87ad9f43ab.setContent(html_81942a3bf535754bb1056111a5c8874e);
+            
+        
+
+        circle_marker_58a5ec78c0622292187ad7c9e838dab7.bindPopup(popup_64cc6d6673ad8232a1ba0d87ad9f43ab)
+        ;
+
+        
+    
+    
+            circle_marker_58a5ec78c0622292187ad7c9e838dab7.bindTooltip(
+                `<div>
+                     [学校] 重庆市开州中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ebbfa092cf5e49b73171bdda10de30e3 = L.circleMarker(
+                [31.035947, 108.138039],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_4b9666e324f274d33d94f223105b1fe1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_14e2842454d9d8210653be95c8eba8b1 = $(`<div id="html_14e2842454d9d8210653be95c8eba8b1" style="width: 100.0%; height: 100.0%;"><b>铁桥中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: 渝巫路南50米</div>`)[0];
+                popup_4b9666e324f274d33d94f223105b1fe1.setContent(html_14e2842454d9d8210653be95c8eba8b1);
+            
+        
+
+        circle_marker_ebbfa092cf5e49b73171bdda10de30e3.bindPopup(popup_4b9666e324f274d33d94f223105b1fe1)
+        ;
+
+        
+    
+    
+            circle_marker_ebbfa092cf5e49b73171bdda10de30e3.bindTooltip(
+                `<div>
+                     [学校] 铁桥中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f6c39e27c16219faf59e6baecac062fd = L.circleMarker(
+                [31.375371, 108.49704],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_699388fd84df70ea62e864048d28c72b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2ecca3bf5e916f0088b20b30edee20fb = $(`<div id="html_2ecca3bf5e916f0088b20b30edee20fb" style="width: 100.0%; height: 100.0%;"><b>开州区温泉中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: 县坝村</div>`)[0];
+                popup_699388fd84df70ea62e864048d28c72b.setContent(html_2ecca3bf5e916f0088b20b30edee20fb);
+            
+        
+
+        circle_marker_f6c39e27c16219faf59e6baecac062fd.bindPopup(popup_699388fd84df70ea62e864048d28c72b)
+        ;
+
+        
+    
+    
+            circle_marker_f6c39e27c16219faf59e6baecac062fd.bindTooltip(
+                `<div>
+                     [学校] 开州区温泉中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fdd4bc17113e94d5545a0f838b6f7571 = L.circleMarker(
+                [31.167888, 108.393935],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_d595b39b282f518ab7767d437ff86b7c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_68f7451a6db53ec4bd853f6c777abd87 = $(`<div id="html_68f7451a6db53ec4bd853f6c777abd87" style="width: 100.0%; height: 100.0%;"><b>重庆市开州区西街初级中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: 滨湖中路1093号</div>`)[0];
+                popup_d595b39b282f518ab7767d437ff86b7c.setContent(html_68f7451a6db53ec4bd853f6c777abd87);
+            
+        
+
+        circle_marker_fdd4bc17113e94d5545a0f838b6f7571.bindPopup(popup_d595b39b282f518ab7767d437ff86b7c)
+        ;
+
+        
+    
+    
+            circle_marker_fdd4bc17113e94d5545a0f838b6f7571.bindTooltip(
+                `<div>
+                     [学校] 重庆市开州区西街初级中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_818a5b3ef06d473cbd1e731a87d65ee2 = L.circleMarker(
+                [31.090596, 108.428581],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_9726518405af6590e98c2dfb81c3100e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0e164ce27bc6b59842d41e63c0fc8397 = $(`<div id="html_0e164ce27bc6b59842d41e63c0fc8397" style="width: 100.0%; height: 100.0%;"><b>重庆市开州高新区中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: 凤翔路与贤书街交叉口西北160米</div>`)[0];
+                popup_9726518405af6590e98c2dfb81c3100e.setContent(html_0e164ce27bc6b59842d41e63c0fc8397);
+            
+        
+
+        circle_marker_818a5b3ef06d473cbd1e731a87d65ee2.bindPopup(popup_9726518405af6590e98c2dfb81c3100e)
+        ;
+
+        
+    
+    
+            circle_marker_818a5b3ef06d473cbd1e731a87d65ee2.bindTooltip(
+                `<div>
+                     [学校] 重庆市开州高新区中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a34f0fde9c08a0964ad60152e2431a2 = L.circleMarker(
+                [31.164279, 108.36168],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_7bc179a900a02c44fa13c4d3a1077dd5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a645cf8c32248511212a11973652867f = $(`<div id="html_a645cf8c32248511212a11973652867f" style="width: 100.0%; height: 100.0%;"><b>重庆市开州区云枫初级中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: 云枫街道学园街148号</div>`)[0];
+                popup_7bc179a900a02c44fa13c4d3a1077dd5.setContent(html_a645cf8c32248511212a11973652867f);
+            
+        
+
+        circle_marker_1a34f0fde9c08a0964ad60152e2431a2.bindPopup(popup_7bc179a900a02c44fa13c4d3a1077dd5)
+        ;
+
+        
+    
+    
+            circle_marker_1a34f0fde9c08a0964ad60152e2431a2.bindTooltip(
+                `<div>
+                     [学校] 重庆市开州区云枫初级中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f3edc46e3dab562be3287b15e574d47 = L.circleMarker(
+                [31.17446, 108.144045],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_b890498629918905f95fa109340a54f9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ae86f7b98b88ef9504d919b376192506 = $(`<div id="html_ae86f7b98b88ef9504d919b376192506" style="width: 100.0%; height: 100.0%;"><b>开州区中和中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: 长滩街与鹤林街交叉口东380米</div>`)[0];
+                popup_b890498629918905f95fa109340a54f9.setContent(html_ae86f7b98b88ef9504d919b376192506);
+            
+        
+
+        circle_marker_7f3edc46e3dab562be3287b15e574d47.bindPopup(popup_b890498629918905f95fa109340a54f9)
+        ;
+
+        
+    
+    
+            circle_marker_7f3edc46e3dab562be3287b15e574d47.bindTooltip(
+                `<div>
+                     [学校] 开州区中和中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4952034b1529d922432b15049bbde668 = L.circleMarker(
+                [31.17321, 108.410099],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_862be9a9833e98475cfb3efa9c4a116b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3aa351c7abf0e717f32864f849ea9746 = $(`<div id="html_3aa351c7abf0e717f32864f849ea9746" style="width: 100.0%; height: 100.0%;"><b>敬业中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: 滨湖东路西一街与锦程路交叉口西北50米</div>`)[0];
+                popup_862be9a9833e98475cfb3efa9c4a116b.setContent(html_3aa351c7abf0e717f32864f849ea9746);
+            
+        
+
+        circle_marker_4952034b1529d922432b15049bbde668.bindPopup(popup_862be9a9833e98475cfb3efa9c4a116b)
+        ;
+
+        
+    
+    
+            circle_marker_4952034b1529d922432b15049bbde668.bindTooltip(
+                `<div>
+                     [学校] 敬业中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ffb0c2d48ab375de14500f59251737b4 = L.circleMarker(
+                [31.093, 108.418951],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_7358866c9cdbdc8c193cb55cbfccb433 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3c25ca1e216936f3b2a41693bade53da = $(`<div id="html_3c25ca1e216936f3b2a41693bade53da" style="width: 100.0%; height: 100.0%;"><b>开州区赵家初中</b><br>类别: 学校<br>行政区: 开州区<br>地址: 赵家镇蔡家村9组</div>`)[0];
+                popup_7358866c9cdbdc8c193cb55cbfccb433.setContent(html_3c25ca1e216936f3b2a41693bade53da);
+            
+        
+
+        circle_marker_ffb0c2d48ab375de14500f59251737b4.bindPopup(popup_7358866c9cdbdc8c193cb55cbfccb433)
+        ;
+
+        
+    
+    
+            circle_marker_ffb0c2d48ab375de14500f59251737b4.bindTooltip(
+                `<div>
+                     [学校] 开州区赵家初中
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_82237dcbcd6fcd83684bd337d8dc54bc = L.circleMarker(
+                [31.168825, 108.419341],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_d3bbf785535b86924ab5f824a76f4fcc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ebbde319701bcc1a718f52801b1764e1 = $(`<div id="html_ebbde319701bcc1a718f52801b1764e1" style="width: 100.0%; height: 100.0%;"><b>重庆市开州区德阳初级中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: 德阳街55号</div>`)[0];
+                popup_d3bbf785535b86924ab5f824a76f4fcc.setContent(html_ebbde319701bcc1a718f52801b1764e1);
+            
+        
+
+        circle_marker_82237dcbcd6fcd83684bd337d8dc54bc.bindPopup(popup_d3bbf785535b86924ab5f824a76f4fcc)
+        ;
+
+        
+    
+    
+            circle_marker_82237dcbcd6fcd83684bd337d8dc54bc.bindTooltip(
+                `<div>
+                     [学校] 重庆市开州区德阳初级中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e74d47022dfba6776cf97c5a2f6c607f = L.circleMarker(
+                [31.175837, 108.419797],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_7b9973d9e8d3509c52908a13080074c3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2c0c61c676f2b02dabcb09bf3073ba74 = $(`<div id="html_2c0c61c676f2b02dabcb09bf3073ba74" style="width: 100.0%; height: 100.0%;"><b>开州区德阳初级中学(中吉校区)</b><br>类别: 学校<br>行政区: 开州区<br>地址: 中原街(滨江大市场对面)</div>`)[0];
+                popup_7b9973d9e8d3509c52908a13080074c3.setContent(html_2c0c61c676f2b02dabcb09bf3073ba74);
+            
+        
+
+        circle_marker_e74d47022dfba6776cf97c5a2f6c607f.bindPopup(popup_7b9973d9e8d3509c52908a13080074c3)
+        ;
+
+        
+    
+    
+            circle_marker_e74d47022dfba6776cf97c5a2f6c607f.bindTooltip(
+                `<div>
+                     [学校] 开州区德阳初级中学(中吉校区)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1ec1c6b8fa1b151f90f52b4ebb771839 = L.circleMarker(
+                [31.17539, 108.432897],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_21798a8a6ded9d40aba0bb44fd47a614 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8ebe4f31ed27a8ccf447002b1df7612e = $(`<div id="html_8ebe4f31ed27a8ccf447002b1df7612e" style="width: 100.0%; height: 100.0%;"><b>龙英文武学校</b><br>类别: 学校<br>行政区: 开州区<br>地址: 南山路</div>`)[0];
+                popup_21798a8a6ded9d40aba0bb44fd47a614.setContent(html_8ebe4f31ed27a8ccf447002b1df7612e);
+            
+        
+
+        circle_marker_1ec1c6b8fa1b151f90f52b4ebb771839.bindPopup(popup_21798a8a6ded9d40aba0bb44fd47a614)
+        ;
+
+        
+    
+    
+            circle_marker_1ec1c6b8fa1b151f90f52b4ebb771839.bindTooltip(
+                `<div>
+                     [学校] 龙英文武学校
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c1f65305e6d765d6affec9e412c2c7a = L.circleMarker(
+                [31.293827, 108.482053],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_39b6021643281c598be795362dde33c9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_295f3c9adde849b0b2aa77707f4c7c83 = $(`<div id="html_295f3c9adde849b0b2aa77707f4c7c83" style="width: 100.0%; height: 100.0%;"><b>开州区郭家初级中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: 正通街10号</div>`)[0];
+                popup_39b6021643281c598be795362dde33c9.setContent(html_295f3c9adde849b0b2aa77707f4c7c83);
+            
+        
+
+        circle_marker_9c1f65305e6d765d6affec9e412c2c7a.bindPopup(popup_39b6021643281c598be795362dde33c9)
+        ;
+
+        
+    
+    
+            circle_marker_9c1f65305e6d765d6affec9e412c2c7a.bindTooltip(
+                `<div>
+                     [学校] 开州区郭家初级中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_501e071008a2407945c8a2d8165747ea = L.circleMarker(
+                [31.262044, 108.481337],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_557f8c8eb4cfb542d4259992e62602b7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8b7dc38102007d4885ca77893bfa40aa = $(`<div id="html_8b7dc38102007d4885ca77893bfa40aa" style="width: 100.0%; height: 100.0%;"><b>重庆市开州区东华初级中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: 郭东路035乡道</div>`)[0];
+                popup_557f8c8eb4cfb542d4259992e62602b7.setContent(html_8b7dc38102007d4885ca77893bfa40aa);
+            
+        
+
+        circle_marker_501e071008a2407945c8a2d8165747ea.bindPopup(popup_557f8c8eb4cfb542d4259992e62602b7)
+        ;
+
+        
+    
+    
+            circle_marker_501e071008a2407945c8a2d8165747ea.bindTooltip(
+                `<div>
+                     [学校] 重庆市开州区东华初级中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e800a597a8ff8a2fa1290462a723f8b9 = L.circleMarker(
+                [31.416791, 108.475474],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_e08f297be16c673985ea973ad69f27be = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c2798b9828bc227311c675768c860866 = $(`<div id="html_c2798b9828bc227311c675768c860866" style="width: 100.0%; height: 100.0%;"><b>开州区和谦学校</b><br>类别: 学校<br>行政区: 开州区<br>地址: 和谦镇红坪街1号</div>`)[0];
+                popup_e08f297be16c673985ea973ad69f27be.setContent(html_c2798b9828bc227311c675768c860866);
+            
+        
+
+        circle_marker_e800a597a8ff8a2fa1290462a723f8b9.bindPopup(popup_e08f297be16c673985ea973ad69f27be)
+        ;
+
+        
+    
+    
+            circle_marker_e800a597a8ff8a2fa1290462a723f8b9.bindTooltip(
+                `<div>
+                     [学校] 开州区和谦学校
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_55b2ab3ca698f907c574802e0c192af1 = L.circleMarker(
+                [31.153057, 108.188553],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_ca2feef9a9763b5c10a49f050c313a16 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dbfa8a605f43a0fd19fef9376b69fbf4 = $(`<div id="html_dbfa8a605f43a0fd19fef9376b69fbf4" style="width: 100.0%; height: 100.0%;"><b>开州区三合初级中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: 三合初级中学(305省道北)</div>`)[0];
+                popup_ca2feef9a9763b5c10a49f050c313a16.setContent(html_dbfa8a605f43a0fd19fef9376b69fbf4);
+            
+        
+
+        circle_marker_55b2ab3ca698f907c574802e0c192af1.bindPopup(popup_ca2feef9a9763b5c10a49f050c313a16)
+        ;
+
+        
+    
+    
+            circle_marker_55b2ab3ca698f907c574802e0c192af1.bindTooltip(
+                `<div>
+                     [学校] 开州区三合初级中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a8a85e919cbe7a2c55078d819d63dc8 = L.circleMarker(
+                [31.180212, 108.435333],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_2d9a9561442665d17b46eb845249be83 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1d4d7a68325cc91ed8f8b34db7a371c2 = $(`<div id="html_1d4d7a68325cc91ed8f8b34db7a371c2" style="width: 100.0%; height: 100.0%;"><b>重庆市开州区文峰初级中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: 滨湖东路99号</div>`)[0];
+                popup_2d9a9561442665d17b46eb845249be83.setContent(html_1d4d7a68325cc91ed8f8b34db7a371c2);
+            
+        
+
+        circle_marker_2a8a85e919cbe7a2c55078d819d63dc8.bindPopup(popup_2d9a9561442665d17b46eb845249be83)
+        ;
+
+        
+    
+    
+            circle_marker_2a8a85e919cbe7a2c55078d819d63dc8.bindTooltip(
+                `<div>
+                     [学校] 重庆市开州区文峰初级中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0459f84db8e5f2129854df6c2ed76b51 = L.circleMarker(
+                [31.551444, 108.76092],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_c3adc757014ae715c45f2008cef5daa8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_943cfec03303dbfb888d894cbbdde83e = $(`<div id="html_943cfec03303dbfb888d894cbbdde83e" style="width: 100.0%; height: 100.0%;"><b>百里初中</b><br>类别: 学校<br>行政区: 开州区<br>地址: 双石路西40米</div>`)[0];
+                popup_c3adc757014ae715c45f2008cef5daa8.setContent(html_943cfec03303dbfb888d894cbbdde83e);
+            
+        
+
+        circle_marker_0459f84db8e5f2129854df6c2ed76b51.bindPopup(popup_c3adc757014ae715c45f2008cef5daa8)
+        ;
+
+        
+    
+    
+            circle_marker_0459f84db8e5f2129854df6c2ed76b51.bindTooltip(
+                `<div>
+                     [学校] 百里初中
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5561afe4ea51e78db68fce051d42d071 = L.circleMarker(
+                [31.504852, 108.448564],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_91249e339a73c8202479fdb9c3cfe894 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ccd160de83b2f4a1d897e1acb830791d = $(`<div id="html_ccd160de83b2f4a1d897e1acb830791d" style="width: 100.0%; height: 100.0%;"><b>开州区大进初级中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: 大进镇皂角坝</div>`)[0];
+                popup_91249e339a73c8202479fdb9c3cfe894.setContent(html_ccd160de83b2f4a1d897e1acb830791d);
+            
+        
+
+        circle_marker_5561afe4ea51e78db68fce051d42d071.bindPopup(popup_91249e339a73c8202479fdb9c3cfe894)
+        ;
+
+        
+    
+    
+            circle_marker_5561afe4ea51e78db68fce051d42d071.bindTooltip(
+                `<div>
+                     [学校] 开州区大进初级中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f23b0e5344547d0880e002ddf376e854 = L.circleMarker(
+                [31.14797, 108.313206],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_493e0d4ee6849982e3297c1ba23668f6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1bf48bce28d35c26d6c29a0dd7a63077 = $(`<div id="html_1bf48bce28d35c26d6c29a0dd7a63077" style="width: 100.0%; height: 100.0%;"><b>开州区镇安初级中学</b><br>类别: 学校<br>行政区: 开州区<br>地址: 天镇路与036县道交叉口西北100米</div>`)[0];
+                popup_493e0d4ee6849982e3297c1ba23668f6.setContent(html_1bf48bce28d35c26d6c29a0dd7a63077);
+            
+        
+
+        circle_marker_f23b0e5344547d0880e002ddf376e854.bindPopup(popup_493e0d4ee6849982e3297c1ba23668f6)
+        ;
+
+        
+    
+    
+            circle_marker_f23b0e5344547d0880e002ddf376e854.bindTooltip(
+                `<div>
+                     [学校] 开州区镇安初级中学
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dde581a882d37e5c4c36ff961c254c43 = L.circleMarker(
+                [31.105238, 108.170155],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_49c9f8213a153e6b9487557d9aa9662a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_49161cd618dd4b16c2f2cbac1cb7c624 = $(`<div id="html_49161cd618dd4b16c2f2cbac1cb7c624" style="width: 100.0%; height: 100.0%;"><b>太原初中</b><br>类别: 学校<br>行政区: 开州区<br>地址: 临江镇青阳育才街太原初级中学</div>`)[0];
+                popup_49c9f8213a153e6b9487557d9aa9662a.setContent(html_49161cd618dd4b16c2f2cbac1cb7c624);
+            
+        
+
+        circle_marker_dde581a882d37e5c4c36ff961c254c43.bindPopup(popup_49c9f8213a153e6b9487557d9aa9662a)
+        ;
+
+        
+    
+    
+            circle_marker_dde581a882d37e5c4c36ff961c254c43.bindTooltip(
+                `<div>
+                     [学校] 太原初中
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f6852f070187d67fa921430c3a42377 = L.circleMarker(
+                [31.170945, 108.404994],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_1e0210633b744c580d5934941e53eef9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_bf7b627177645e2da44a3c5555a3ad23 = $(`<div id="html_bf7b627177645e2da44a3c5555a3ad23" style="width: 100.0%; height: 100.0%;"><b>瑞幸咖啡(重庆开州步行街店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 汉丰街道锦程社区开州步行街1337号</div>`)[0];
+                popup_1e0210633b744c580d5934941e53eef9.setContent(html_bf7b627177645e2da44a3c5555a3ad23);
+            
+        
+
+        circle_marker_7f6852f070187d67fa921430c3a42377.bindPopup(popup_1e0210633b744c580d5934941e53eef9)
+        ;
+
+        
+    
+    
+            circle_marker_7f6852f070187d67fa921430c3a42377.bindTooltip(
+                `<div>
+                     [咖啡厅] 瑞幸咖啡(重庆开州步行街店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a4d8181d3e1813621c431ee27e501d6e = L.circleMarker(
+                [31.169967, 108.404777],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_e44eb01d0b177b179f4ff5ef64417b56 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f371f6adc58806b968e6d880ad928db9 = $(`<div id="html_f371f6adc58806b968e6d880ad928db9" style="width: 100.0%; height: 100.0%;"><b>星巴克(新世纪百货店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 开州大道88号新世纪百货开州商都地上一层A1-01的F</div>`)[0];
+                popup_e44eb01d0b177b179f4ff5ef64417b56.setContent(html_f371f6adc58806b968e6d880ad928db9);
+            
+        
+
+        circle_marker_a4d8181d3e1813621c431ee27e501d6e.bindPopup(popup_e44eb01d0b177b179f4ff5ef64417b56)
+        ;
+
+        
+    
+    
+            circle_marker_a4d8181d3e1813621c431ee27e501d6e.bindTooltip(
+                `<div>
+                     [咖啡厅] 星巴克(新世纪百货店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7cb5592bc0cfdc6b8651d1c609fccc6f = L.circleMarker(
+                [31.171194, 108.402693],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_dd7b819bea0b87a889497e81371aae6f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6077afc103f6a0f18dcc2dbb3df963a8 = $(`<div id="html_6077afc103f6a0f18dcc2dbb3df963a8" style="width: 100.0%; height: 100.0%;"><b>大小姐coffee(开州步行街店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 汉丰街道华夏上海城</div>`)[0];
+                popup_dd7b819bea0b87a889497e81371aae6f.setContent(html_6077afc103f6a0f18dcc2dbb3df963a8);
+            
+        
+
+        circle_marker_7cb5592bc0cfdc6b8651d1c609fccc6f.bindPopup(popup_dd7b819bea0b87a889497e81371aae6f)
+        ;
+
+        
+    
+    
+            circle_marker_7cb5592bc0cfdc6b8651d1c609fccc6f.bindTooltip(
+                `<div>
+                     [咖啡厅] 大小姐coffee(开州步行街店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e0aadab18076c81d669f3a0a588adefa = L.circleMarker(
+                [31.168, 108.398275],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_7b20437b7f2dc2a91d5d4631a6ffd917 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_053cf54f6a5ff8fef9b15fae2cf1c7ce = $(`<div id="html_053cf54f6a5ff8fef9b15fae2cf1c7ce" style="width: 100.0%; height: 100.0%;"><b>库迪咖啡(开州时代金街店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 开州区开州步行街1157号附1号(肯德基斜对面)</div>`)[0];
+                popup_7b20437b7f2dc2a91d5d4631a6ffd917.setContent(html_053cf54f6a5ff8fef9b15fae2cf1c7ce);
+            
+        
+
+        circle_marker_e0aadab18076c81d669f3a0a588adefa.bindPopup(popup_7b20437b7f2dc2a91d5d4631a6ffd917)
+        ;
+
+        
+    
+    
+            circle_marker_e0aadab18076c81d669f3a0a588adefa.bindTooltip(
+                `<div>
+                     [咖啡厅] 库迪咖啡(开州时代金街店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7eadc2dc4eafd1de12f757d19227869a = L.circleMarker(
+                [31.17081, 108.405744],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_445f84c9ed57078f0ef92f57f4490b9a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e6ec037a639581abc13de5fbe5c62991 = $(`<div id="html_e6ec037a639581abc13de5fbe5c62991" style="width: 100.0%; height: 100.0%;"><b>猫窝咖啡(新世纪店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 汉丰街道百成街北一路30号三楼未来影城对面</div>`)[0];
+                popup_445f84c9ed57078f0ef92f57f4490b9a.setContent(html_e6ec037a639581abc13de5fbe5c62991);
+            
+        
+
+        circle_marker_7eadc2dc4eafd1de12f757d19227869a.bindPopup(popup_445f84c9ed57078f0ef92f57f4490b9a)
+        ;
+
+        
+    
+    
+            circle_marker_7eadc2dc4eafd1de12f757d19227869a.bindTooltip(
+                `<div>
+                     [咖啡厅] 猫窝咖啡(新世纪店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ff61622da3554051305f84b5452f3bb = L.circleMarker(
+                [31.174456, 108.407741],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_41b7743b559d4f00f051d01b134be203 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dd003cf802224f69273cb9f537ee2633 = $(`<div id="html_dd003cf802224f69273cb9f537ee2633" style="width: 100.0%; height: 100.0%;"><b>欧索米萝咖啡(九龙路店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 九龙路与驷马街交叉口西100米</div>`)[0];
+                popup_41b7743b559d4f00f051d01b134be203.setContent(html_dd003cf802224f69273cb9f537ee2633);
+            
+        
+
+        circle_marker_4ff61622da3554051305f84b5452f3bb.bindPopup(popup_41b7743b559d4f00f051d01b134be203)
+        ;
+
+        
+    
+    
+            circle_marker_4ff61622da3554051305f84b5452f3bb.bindTooltip(
+                `<div>
+                     [咖啡厅] 欧索米萝咖啡(九龙路店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_48db9a52c5691c2379c1f0b01d483e54 = L.circleMarker(
+                [31.167203, 108.357828],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_6b4228edf285e24973654fabe572aba9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_87f5f5f0e92d7035bcfcc9b53d1b93e0 = $(`<div id="html_87f5f5f0e92d7035bcfcc9b53d1b93e0" style="width: 100.0%; height: 100.0%;"><b>瑞幸咖啡(开州平桥金科店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 滨湖西路533号附1-12号底商</div>`)[0];
+                popup_6b4228edf285e24973654fabe572aba9.setContent(html_87f5f5f0e92d7035bcfcc9b53d1b93e0);
+            
+        
+
+        circle_marker_48db9a52c5691c2379c1f0b01d483e54.bindPopup(popup_6b4228edf285e24973654fabe572aba9)
+        ;
+
+        
+    
+    
+            circle_marker_48db9a52c5691c2379c1f0b01d483e54.bindTooltip(
+                `<div>
+                     [咖啡厅] 瑞幸咖啡(开州平桥金科店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_efc338882cd3011a425e6a0eddcd3173 = L.circleMarker(
+                [31.183922, 108.426656],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_dac4482447e3d3d3a26880aa25996706 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3f934f9cd03a6eccb3a2e07adcbac597 = $(`<div id="html_3f934f9cd03a6eccb3a2e07adcbac597" style="width: 100.0%; height: 100.0%;"><b>星巴克(辰时里·乐活城店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 文峰街道滨湖东路208号辰时里·乐活城1层L1-001单元商铺</div>`)[0];
+                popup_dac4482447e3d3d3a26880aa25996706.setContent(html_3f934f9cd03a6eccb3a2e07adcbac597);
+            
+        
+
+        circle_marker_efc338882cd3011a425e6a0eddcd3173.bindPopup(popup_dac4482447e3d3d3a26880aa25996706)
+        ;
+
+        
+    
+    
+            circle_marker_efc338882cd3011a425e6a0eddcd3173.bindTooltip(
+                `<div>
+                     [咖啡厅] 星巴克(辰时里·乐活城店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eac5116b9c096698eba68228d70e8fe9 = L.circleMarker(
+                [31.170682, 108.404838],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_42024db99b460cc8c7b7d73b8e07dcca = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6e4f8e035d01ba1adf6738cb641a233c = $(`<div id="html_6e4f8e035d01ba1adf6738cb641a233c" style="width: 100.0%; height: 100.0%;"><b>幸运咖(新世纪店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 重庆城区开州区开州大道中80号A1-102号</div>`)[0];
+                popup_42024db99b460cc8c7b7d73b8e07dcca.setContent(html_6e4f8e035d01ba1adf6738cb641a233c);
+            
+        
+
+        circle_marker_eac5116b9c096698eba68228d70e8fe9.bindPopup(popup_42024db99b460cc8c7b7d73b8e07dcca)
+        ;
+
+        
+    
+    
+            circle_marker_eac5116b9c096698eba68228d70e8fe9.bindTooltip(
+                `<div>
+                     [咖啡厅] 幸运咖(新世纪店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_af6ec02fd9e4afee9a61891950627f20 = L.circleMarker(
+                [31.167433, 108.358268],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_4133b5a3f9beacae0831017befbe8523 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0de61083e2bfaa8c32fe49bea0ca04ee = $(`<div id="html_0de61083e2bfaa8c32fe49bea0ca04ee" style="width: 100.0%; height: 100.0%;"><b>库迪咖啡(开州平桥金科店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 云枫街道天宫街394号(家福便利店东侧)</div>`)[0];
+                popup_4133b5a3f9beacae0831017befbe8523.setContent(html_0de61083e2bfaa8c32fe49bea0ca04ee);
+            
+        
+
+        circle_marker_af6ec02fd9e4afee9a61891950627f20.bindPopup(popup_4133b5a3f9beacae0831017befbe8523)
+        ;
+
+        
+    
+    
+            circle_marker_af6ec02fd9e4afee9a61891950627f20.bindTooltip(
+                `<div>
+                     [咖啡厅] 库迪咖啡(开州平桥金科店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc5c519928dbbe68e89d94452f3446f7 = L.circleMarker(
+                [31.17567, 108.407642],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_ad5e3404766526db997917985ae15150 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_035d71518ff7b85ba2621465e4e3032d = $(`<div id="html_035d71518ff7b85ba2621465e4e3032d" style="width: 100.0%; height: 100.0%;"><b>星座咖啡</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 汉丰街道九龙社区人民路2017号附1号</div>`)[0];
+                popup_ad5e3404766526db997917985ae15150.setContent(html_035d71518ff7b85ba2621465e4e3032d);
+            
+        
+
+        circle_marker_dc5c519928dbbe68e89d94452f3446f7.bindPopup(popup_ad5e3404766526db997917985ae15150)
+        ;
+
+        
+    
+    
+            circle_marker_dc5c519928dbbe68e89d94452f3446f7.bindTooltip(
+                `<div>
+                     [咖啡厅] 星座咖啡
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f0f2fa1c0de6e02d7c3af9e02223c3ea = L.circleMarker(
+                [31.168525, 108.402875],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_683778a3de403f88c30d326111bacdb9 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2e7efe6336dfb9359ca5a2c608386b76 = $(`<div id="html_2e7efe6336dfb9359ca5a2c608386b76" style="width: 100.0%; height: 100.0%;"><b>瑞幸咖啡(开州地一国际店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 开州大道109-113号地一国际商业街B区负一层5号</div>`)[0];
+                popup_683778a3de403f88c30d326111bacdb9.setContent(html_2e7efe6336dfb9359ca5a2c608386b76);
+            
+        
+
+        circle_marker_f0f2fa1c0de6e02d7c3af9e02223c3ea.bindPopup(popup_683778a3de403f88c30d326111bacdb9)
+        ;
+
+        
+    
+    
+            circle_marker_f0f2fa1c0de6e02d7c3af9e02223c3ea.bindTooltip(
+                `<div>
+                     [咖啡厅] 瑞幸咖啡(开州地一国际店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cef4380e0fa8d6d061cad8b039b140fb = L.circleMarker(
+                [31.182886, 108.430709],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_2141ba477534d6f70e1a38bbf487bf3c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1647ab32ec220edf8fc700c531b6f15e = $(`<div id="html_1647ab32ec220edf8fc700c531b6f15e" style="width: 100.0%; height: 100.0%;"><b>TwelveCoffee</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 滨湖东路95号</div>`)[0];
+                popup_2141ba477534d6f70e1a38bbf487bf3c.setContent(html_1647ab32ec220edf8fc700c531b6f15e);
+            
+        
+
+        circle_marker_cef4380e0fa8d6d061cad8b039b140fb.bindPopup(popup_2141ba477534d6f70e1a38bbf487bf3c)
+        ;
+
+        
+    
+    
+            circle_marker_cef4380e0fa8d6d061cad8b039b140fb.bindTooltip(
+                `<div>
+                     [咖啡厅] TwelveCoffee
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ece2c7a86369c74d7f4864239290a90 = L.circleMarker(
+                [31.155281, 108.361704],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_f59673158a054a5cb1d392acbf195738 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2cccfb40d7544306d2a506b047270936 = $(`<div id="html_2cccfb40d7544306d2a506b047270936" style="width: 100.0%; height: 100.0%;"><b>幸运咖(巴渠街店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 云枫街道巴渠街54号</div>`)[0];
+                popup_f59673158a054a5cb1d392acbf195738.setContent(html_2cccfb40d7544306d2a506b047270936);
+            
+        
+
+        circle_marker_4ece2c7a86369c74d7f4864239290a90.bindPopup(popup_f59673158a054a5cb1d392acbf195738)
+        ;
+
+        
+    
+    
+            circle_marker_4ece2c7a86369c74d7f4864239290a90.bindTooltip(
+                `<div>
+                     [咖啡厅] 幸运咖(巴渠街店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_be57897dfc55402a8f8501134f9af728 = L.circleMarker(
+                [31.086651, 108.427564],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_707ccf0cd6f1fbc8df0ca80b91ce4c12 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4a3329949b6036c287f84a899db80adc = $(`<div id="html_4a3329949b6036c287f84a899db80adc" style="width: 100.0%; height: 100.0%;"><b>库迪咖啡(开州赵家帅兴路店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 帅兴路178号</div>`)[0];
+                popup_707ccf0cd6f1fbc8df0ca80b91ce4c12.setContent(html_4a3329949b6036c287f84a899db80adc);
+            
+        
+
+        circle_marker_be57897dfc55402a8f8501134f9af728.bindPopup(popup_707ccf0cd6f1fbc8df0ca80b91ce4c12)
+        ;
+
+        
+    
+    
+            circle_marker_be57897dfc55402a8f8501134f9af728.bindTooltip(
+                `<div>
+                     [咖啡厅] 库迪咖啡(开州赵家帅兴路店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba7ea527ce124c4c018cbb9b46a4b4df = L.circleMarker(
+                [31.100237, 108.221374],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_3a949d7ec084f65bcc08f518c9e5cc39 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_22d7a90914706e5315dfd30ba179fcce = $(`<div id="html_22d7a90914706e5315dfd30ba179fcce" style="width: 100.0%; height: 100.0%;"><b>城市咖啡(开州临江店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 临江镇大兴街四十米大街</div>`)[0];
+                popup_3a949d7ec084f65bcc08f518c9e5cc39.setContent(html_22d7a90914706e5315dfd30ba179fcce);
+            
+        
+
+        circle_marker_ba7ea527ce124c4c018cbb9b46a4b4df.bindPopup(popup_3a949d7ec084f65bcc08f518c9e5cc39)
+        ;
+
+        
+    
+    
+            circle_marker_ba7ea527ce124c4c018cbb9b46a4b4df.bindTooltip(
+                `<div>
+                     [咖啡厅] 城市咖啡(开州临江店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c47d2e02c7fca55b38206a50dfbe9d63 = L.circleMarker(
+                [31.17106, 108.404375],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_02964113b7b3c46efeb2fed092e31453 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_354c6d1baabe2fb7cf2d851517735e10 = $(`<div id="html_354c6d1baabe2fb7cf2d851517735e10" style="width: 100.0%; height: 100.0%;"><b>千玺咖啡馆(开州步行街店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 开州步行街1325号牛王阁楼上</div>`)[0];
+                popup_02964113b7b3c46efeb2fed092e31453.setContent(html_354c6d1baabe2fb7cf2d851517735e10);
+            
+        
+
+        circle_marker_c47d2e02c7fca55b38206a50dfbe9d63.bindPopup(popup_02964113b7b3c46efeb2fed092e31453)
+        ;
+
+        
+    
+    
+            circle_marker_c47d2e02c7fca55b38206a50dfbe9d63.bindTooltip(
+                `<div>
+                     [咖啡厅] 千玺咖啡馆(开州步行街店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2752a69359617f4fdaa2e7435ccb14a0 = L.circleMarker(
+                [31.183886, 108.427216],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_005a88e747299a0b78a8c7f1d53cd553 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f04f18bd5fbb86123366671e8d6362bf = $(`<div id="html_f04f18bd5fbb86123366671e8d6362bf" style="width: 100.0%; height: 100.0%;"><b>瑞幸咖啡(开州乐活城店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 滨湖东路208号假日国际广场一层021号</div>`)[0];
+                popup_005a88e747299a0b78a8c7f1d53cd553.setContent(html_f04f18bd5fbb86123366671e8d6362bf);
+            
+        
+
+        circle_marker_2752a69359617f4fdaa2e7435ccb14a0.bindPopup(popup_005a88e747299a0b78a8c7f1d53cd553)
+        ;
+
+        
+    
+    
+            circle_marker_2752a69359617f4fdaa2e7435ccb14a0.bindTooltip(
+                `<div>
+                     [咖啡厅] 瑞幸咖啡(开州乐活城店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df520985399ebc3ce4efb55a17d403f6 = L.circleMarker(
+                [31.174325, 108.406775],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_1c55366766557812ff947745c58e9c9f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a5d2a2e742623df7e959eb8da13eb7d1 = $(`<div id="html_a5d2a2e742623df7e959eb8da13eb7d1" style="width: 100.0%; height: 100.0%;"><b>開COFFEE24h</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 九龙路与百成街交叉口东20米</div>`)[0];
+                popup_1c55366766557812ff947745c58e9c9f.setContent(html_a5d2a2e742623df7e959eb8da13eb7d1);
+            
+        
+
+        circle_marker_df520985399ebc3ce4efb55a17d403f6.bindPopup(popup_1c55366766557812ff947745c58e9c9f)
+        ;
+
+        
+    
+    
+            circle_marker_df520985399ebc3ce4efb55a17d403f6.bindTooltip(
+                `<div>
+                     [咖啡厅] 開COFFEE24h
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d345a71f6ba0354fb7e6076b4c68b247 = L.circleMarker(
+                [31.164076, 108.38895],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_2453d403535c445d7161b8c23f9ef5b2 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5b8063dfc9f5ecca565b2dd565bf94e2 = $(`<div id="html_5b8063dfc9f5ecca565b2dd565bf94e2" style="width: 100.0%; height: 100.0%;"><b>幸运咖(开中校东门店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 迎宾街106号(开州中学东门对面)</div>`)[0];
+                popup_2453d403535c445d7161b8c23f9ef5b2.setContent(html_5b8063dfc9f5ecca565b2dd565bf94e2);
+            
+        
+
+        circle_marker_d345a71f6ba0354fb7e6076b4c68b247.bindPopup(popup_2453d403535c445d7161b8c23f9ef5b2)
+        ;
+
+        
+    
+    
+            circle_marker_d345a71f6ba0354fb7e6076b4c68b247.bindTooltip(
+                `<div>
+                     [咖啡厅] 幸运咖(开中校东门店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90784dda3afb8da407baaa1a59dbca6c = L.circleMarker(
+                [30.996481, 108.309136],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_64804fc8f4fd60495a35eb1fb206e474 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0557281469eee3f96343dd882b9ccd8b = $(`<div id="html_0557281469eee3f96343dd882b9ccd8b" style="width: 100.0%; height: 100.0%;"><b>库迪咖啡(开州长沙山花街店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 长沙镇甜橙路101号</div>`)[0];
+                popup_64804fc8f4fd60495a35eb1fb206e474.setContent(html_0557281469eee3f96343dd882b9ccd8b);
+            
+        
+
+        circle_marker_90784dda3afb8da407baaa1a59dbca6c.bindPopup(popup_64804fc8f4fd60495a35eb1fb206e474)
+        ;
+
+        
+    
+    
+            circle_marker_90784dda3afb8da407baaa1a59dbca6c.bindTooltip(
+                `<div>
+                     [咖啡厅] 库迪咖啡(开州长沙山花街店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_920e78370a43b8a6ba01ae4e610ff100 = L.circleMarker(
+                [31.17417, 108.407158],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_d849faab3ad87ed902249c850c527832 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_53f5c9212be0d76f139cdd8e10ed8a4c = $(`<div id="html_53f5c9212be0d76f139cdd8e10ed8a4c" style="width: 100.0%; height: 100.0%;"><b>格兰芬多咖啡厅(吉祥·中华城店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 九龙路17号2层</div>`)[0];
+                popup_d849faab3ad87ed902249c850c527832.setContent(html_53f5c9212be0d76f139cdd8e10ed8a4c);
+            
+        
+
+        circle_marker_920e78370a43b8a6ba01ae4e610ff100.bindPopup(popup_d849faab3ad87ed902249c850c527832)
+        ;
+
+        
+    
+    
+            circle_marker_920e78370a43b8a6ba01ae4e610ff100.bindTooltip(
+                `<div>
+                     [咖啡厅] 格兰芬多咖啡厅(吉祥·中华城店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2ec02b4f17846ac4d54bcc9786112084 = L.circleMarker(
+                [31.177937, 108.404],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_544a8f5b199ee293baa1300bfddeacb3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_84876792410584924cc07d858a00a12c = $(`<div id="html_84876792410584924cc07d858a00a12c" style="width: 100.0%; height: 100.0%;"><b>NOWWA挪瓦咖啡(美宜佳开州游泳馆店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 汉丰街道百成社区百成街301号(美宜佳店内)</div>`)[0];
+                popup_544a8f5b199ee293baa1300bfddeacb3.setContent(html_84876792410584924cc07d858a00a12c);
+            
+        
+
+        circle_marker_2ec02b4f17846ac4d54bcc9786112084.bindPopup(popup_544a8f5b199ee293baa1300bfddeacb3)
+        ;
+
+        
+    
+    
+            circle_marker_2ec02b4f17846ac4d54bcc9786112084.bindTooltip(
+                `<div>
+                     [咖啡厅] NOWWA挪瓦咖啡(美宜佳开州游泳馆店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f92dd5d355982e739d94c5a61925dc43 = L.circleMarker(
+                [31.087107, 108.428391],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_bbc9a7111bb5e2e22606702aa92905d1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_caedb4e078edf3ce6589243a76899d83 = $(`<div id="html_caedb4e078edf3ce6589243a76899d83" style="width: 100.0%; height: 100.0%;"><b>瑞幸咖啡(开州赵家镇店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 帅兴路与怡安街交叉口东北40米</div>`)[0];
+                popup_bbc9a7111bb5e2e22606702aa92905d1.setContent(html_caedb4e078edf3ce6589243a76899d83);
+            
+        
+
+        circle_marker_f92dd5d355982e739d94c5a61925dc43.bindPopup(popup_bbc9a7111bb5e2e22606702aa92905d1)
+        ;
+
+        
+    
+    
+            circle_marker_f92dd5d355982e739d94c5a61925dc43.bindTooltip(
+                `<div>
+                     [咖啡厅] 瑞幸咖啡(开州赵家镇店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_83aac89a046be66135197dd7d348e110 = L.circleMarker(
+                [31.17109, 108.406724],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_422fa470ef4c771f66c09372e109791d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_38e75bb90333409409dc20f461fd2422 = $(`<div id="html_38e75bb90333409409dc20f461fd2422" style="width: 100.0%; height: 100.0%;"><b>巴厘岛咖啡厅(百成街北一路店)</b><br>类别: 咖啡厅<br>行政区: 开州区<br>地址: 水利佳苑南门西50米</div>`)[0];
+                popup_422fa470ef4c771f66c09372e109791d.setContent(html_38e75bb90333409409dc20f461fd2422);
+            
+        
+
+        circle_marker_83aac89a046be66135197dd7d348e110.bindPopup(popup_422fa470ef4c771f66c09372e109791d)
+        ;
+
+        
+    
+    
+            circle_marker_83aac89a046be66135197dd7d348e110.bindTooltip(
+                `<div>
+                     [咖啡厅] 巴厘岛咖啡厅(百成街北一路店)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e6f7579a1deb20be47e245a13432cdb3 = L.circleMarker(
+                [31.159913, 108.396836],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_4912343e50c08a1b1a9e1dca234314b6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_79733378f97e37e85969ca35a7605cf8 = $(`<div id="html_79733378f97e37e85969ca35a7605cf8" style="width: 100.0%; height: 100.0%;"><b>安检局站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州3路;开州9路</div>`)[0];
+                popup_4912343e50c08a1b1a9e1dca234314b6.setContent(html_79733378f97e37e85969ca35a7605cf8);
+            
+        
+
+        circle_marker_e6f7579a1deb20be47e245a13432cdb3.bindPopup(popup_4912343e50c08a1b1a9e1dca234314b6)
+        ;
+
+        
+    
+    
+            circle_marker_e6f7579a1deb20be47e245a13432cdb3.bindTooltip(
+                `<div>
+                     [公交站] 安检局站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8b2e8d354eda8e0b16dfe3f21e1d4d2f = L.circleMarker(
+                [31.157539, 108.36129],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_3fe3837cd234f27894a3628dcc3bb762 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dd6c156cec9d23a6f64c2300d868c78e = $(`<div id="html_dd6c156cec9d23a6f64c2300d868c78e" style="width: 100.0%; height: 100.0%;"><b>政务服务中心站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州1路;开州2路;开州3路;开州4路;开州7路;开州8路;开州9路</div>`)[0];
+                popup_3fe3837cd234f27894a3628dcc3bb762.setContent(html_dd6c156cec9d23a6f64c2300d868c78e);
+            
+        
+
+        circle_marker_8b2e8d354eda8e0b16dfe3f21e1d4d2f.bindPopup(popup_3fe3837cd234f27894a3628dcc3bb762)
+        ;
+
+        
+    
+    
+            circle_marker_8b2e8d354eda8e0b16dfe3f21e1d4d2f.bindTooltip(
+                `<div>
+                     [公交站] 政务服务中心站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_613ed5b3b1da866276e514c25d1f9601 = L.circleMarker(
+                [31.084395, 108.424059],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_dc0a693259d1adf9cd37d87912f8d340 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e9e9f0b82b94922ef2bbe0a8ec0bcae0 = $(`<div id="html_e9e9f0b82b94922ef2bbe0a8ec0bcae0" style="width: 100.0%; height: 100.0%;"><b>赵家高速路口站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州15路;开州22路;开州港线</div>`)[0];
+                popup_dc0a693259d1adf9cd37d87912f8d340.setContent(html_e9e9f0b82b94922ef2bbe0a8ec0bcae0);
+            
+        
+
+        circle_marker_613ed5b3b1da866276e514c25d1f9601.bindPopup(popup_dc0a693259d1adf9cd37d87912f8d340)
+        ;
+
+        
+    
+    
+            circle_marker_613ed5b3b1da866276e514c25d1f9601.bindTooltip(
+                `<div>
+                     [公交站] 赵家高速路口站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_655fb8facfe38965d97674b3e24eb199 = L.circleMarker(
+                [31.202088, 108.555326],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_c2ff835bea498f955195dc385ba2a1bb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_520d8ab9a22e564443aff9d3a124b6c2 = $(`<div id="html_520d8ab9a22e564443aff9d3a124b6c2" style="width: 100.0%; height: 100.0%;"><b>洞子湾大桥站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州17路</div>`)[0];
+                popup_c2ff835bea498f955195dc385ba2a1bb.setContent(html_520d8ab9a22e564443aff9d3a124b6c2);
+            
+        
+
+        circle_marker_655fb8facfe38965d97674b3e24eb199.bindPopup(popup_c2ff835bea498f955195dc385ba2a1bb)
+        ;
+
+        
+    
+    
+            circle_marker_655fb8facfe38965d97674b3e24eb199.bindTooltip(
+                `<div>
+                     [公交站] 洞子湾大桥站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b00f6c27094c42064cf7e3fe6cb5a017 = L.circleMarker(
+                [31.207033, 108.49828],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_b6b94426c4ab7fef687f5d40319415d0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_600981d58c6eb6b81ceec1d98903ea8b = $(`<div id="html_600981d58c6eb6b81ceec1d98903ea8b" style="width: 100.0%; height: 100.0%;"><b>大另村站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州17路</div>`)[0];
+                popup_b6b94426c4ab7fef687f5d40319415d0.setContent(html_600981d58c6eb6b81ceec1d98903ea8b);
+            
+        
+
+        circle_marker_b00f6c27094c42064cf7e3fe6cb5a017.bindPopup(popup_b6b94426c4ab7fef687f5d40319415d0)
+        ;
+
+        
+    
+    
+            circle_marker_b00f6c27094c42064cf7e3fe6cb5a017.bindTooltip(
+                `<div>
+                     [公交站] 大另村站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_451584e2c97386de0c6d97eb21743fb6 = L.circleMarker(
+                [31.211137, 108.542478],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_d622ea20831dd088d379ae455d3f1fad = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_16d06045c418541f5f3a9159acaaeb0b = $(`<div id="html_16d06045c418541f5f3a9159acaaeb0b" style="width: 100.0%; height: 100.0%;"><b>排垭口一站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州17路</div>`)[0];
+                popup_d622ea20831dd088d379ae455d3f1fad.setContent(html_16d06045c418541f5f3a9159acaaeb0b);
+            
+        
+
+        circle_marker_451584e2c97386de0c6d97eb21743fb6.bindPopup(popup_d622ea20831dd088d379ae455d3f1fad)
+        ;
+
+        
+    
+    
+            circle_marker_451584e2c97386de0c6d97eb21743fb6.bindTooltip(
+                `<div>
+                     [公交站] 排垭口一站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df7322689cb1b9666c108d6a975b6946 = L.circleMarker(
+                [31.158931, 108.383856],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_80353cd359a6e80bfd86742fc6dbd804 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_478d967ff041352fb282321a600b178d = $(`<div id="html_478d967ff041352fb282321a600b178d" style="width: 100.0%; height: 100.0%;"><b>汉丰三校东站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州19路;开州9路</div>`)[0];
+                popup_80353cd359a6e80bfd86742fc6dbd804.setContent(html_478d967ff041352fb282321a600b178d);
+            
+        
+
+        circle_marker_df7322689cb1b9666c108d6a975b6946.bindPopup(popup_80353cd359a6e80bfd86742fc6dbd804)
+        ;
+
+        
+    
+    
+            circle_marker_df7322689cb1b9666c108d6a975b6946.bindTooltip(
+                `<div>
+                     [公交站] 汉丰三校东站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8aca9a6539bd52b5149d87af74bf67cd = L.circleMarker(
+                [31.162014, 108.377693],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_6de1b1b48a499d6718a36d06ee9692ef = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8b5dfdb17a2d57757b417ecc8e30aaaf = $(`<div id="html_8b5dfdb17a2d57757b417ecc8e30aaaf" style="width: 100.0%; height: 100.0%;"><b>桃李园站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州19路</div>`)[0];
+                popup_6de1b1b48a499d6718a36d06ee9692ef.setContent(html_8b5dfdb17a2d57757b417ecc8e30aaaf);
+            
+        
+
+        circle_marker_8aca9a6539bd52b5149d87af74bf67cd.bindPopup(popup_6de1b1b48a499d6718a36d06ee9692ef)
+        ;
+
+        
+    
+    
+            circle_marker_8aca9a6539bd52b5149d87af74bf67cd.bindTooltip(
+                `<div>
+                     [公交站] 桃李园站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b0e32fef3a6ae99630cf26fe66859aff = L.circleMarker(
+                [30.989885, 108.305929],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_db54bab24db40c47935d0a66c6a555e1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_85c7e910c9c3946e633b4525eb5dda7c = $(`<div id="html_85c7e910c9c3946e633b4525eb5dda7c" style="width: 100.0%; height: 100.0%;"><b>长沙宾馆(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 万开城际公交;开州22路</div>`)[0];
+                popup_db54bab24db40c47935d0a66c6a555e1.setContent(html_85c7e910c9c3946e633b4525eb5dda7c);
+            
+        
+
+        circle_marker_b0e32fef3a6ae99630cf26fe66859aff.bindPopup(popup_db54bab24db40c47935d0a66c6a555e1)
+        ;
+
+        
+    
+    
+            circle_marker_b0e32fef3a6ae99630cf26fe66859aff.bindTooltip(
+                `<div>
+                     [公交站] 长沙宾馆(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4990fbbd512f4379056926a84b8ddf93 = L.circleMarker(
+                [31.106606, 108.270221],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_2b8b14f7a164406e2be7ff92ad33450c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1036ce173cff1342d3b2979c1e65ff7c = $(`<div id="html_1036ce173cff1342d3b2979c1e65ff7c" style="width: 100.0%; height: 100.0%;"><b>红花桥站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州13路</div>`)[0];
+                popup_2b8b14f7a164406e2be7ff92ad33450c.setContent(html_1036ce173cff1342d3b2979c1e65ff7c);
+            
+        
+
+        circle_marker_4990fbbd512f4379056926a84b8ddf93.bindPopup(popup_2b8b14f7a164406e2be7ff92ad33450c)
+        ;
+
+        
+    
+    
+            circle_marker_4990fbbd512f4379056926a84b8ddf93.bindTooltip(
+                `<div>
+                     [公交站] 红花桥站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6f5481b92233ad336bf8eab31b6efbad = L.circleMarker(
+                [31.14826, 108.335075],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_4c4e3a6e15f526e775684291a86186c3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8f574bf862ae0cff2ced80dae298d5e3 = $(`<div id="html_8f574bf862ae0cff2ced80dae298d5e3" style="width: 100.0%; height: 100.0%;"><b>歇马小学(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州19路</div>`)[0];
+                popup_4c4e3a6e15f526e775684291a86186c3.setContent(html_8f574bf862ae0cff2ced80dae298d5e3);
+            
+        
+
+        circle_marker_6f5481b92233ad336bf8eab31b6efbad.bindPopup(popup_4c4e3a6e15f526e775684291a86186c3)
+        ;
+
+        
+    
+    
+            circle_marker_6f5481b92233ad336bf8eab31b6efbad.bindTooltip(
+                `<div>
+                     [公交站] 歇马小学(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_57087dc908141d4a940f50627f2e56cf = L.circleMarker(
+                [30.993883, 108.306979],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_92b7fae669f3d7d53e5eeadd5ccb30cb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_86d7bf1ad10ac5841ab97f2164083966 = $(`<div id="html_86d7bf1ad10ac5841ab97f2164083966" style="width: 100.0%; height: 100.0%;"><b>长沙镇第二人民医院站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 万开城际公交</div>`)[0];
+                popup_92b7fae669f3d7d53e5eeadd5ccb30cb.setContent(html_86d7bf1ad10ac5841ab97f2164083966);
+            
+        
+
+        circle_marker_57087dc908141d4a940f50627f2e56cf.bindPopup(popup_92b7fae669f3d7d53e5eeadd5ccb30cb)
+        ;
+
+        
+    
+    
+            circle_marker_57087dc908141d4a940f50627f2e56cf.bindTooltip(
+                `<div>
+                     [公交站] 长沙镇第二人民医院站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_793f6bff2103d8c92c0d481bc0e358db = L.circleMarker(
+                [30.997099, 108.309373],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_1e5b0d7c2c0764dd1d88a91ca5b4e27b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_65ed1e62812350fb74e3d7698e6a1391 = $(`<div id="html_65ed1e62812350fb74e3d7698e6a1391" style="width: 100.0%; height: 100.0%;"><b>陈家车站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 万开城际公交;开州22路</div>`)[0];
+                popup_1e5b0d7c2c0764dd1d88a91ca5b4e27b.setContent(html_65ed1e62812350fb74e3d7698e6a1391);
+            
+        
+
+        circle_marker_793f6bff2103d8c92c0d481bc0e358db.bindPopup(popup_1e5b0d7c2c0764dd1d88a91ca5b4e27b)
+        ;
+
+        
+    
+    
+            circle_marker_793f6bff2103d8c92c0d481bc0e358db.bindTooltip(
+                `<div>
+                     [公交站] 陈家车站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b52ce68dabc646308bda2ff15d08cf2d = L.circleMarker(
+                [31.07224, 108.402958],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_5700e64defc6346a234330726de7f4a0 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a996c7dff2b32f2a901b46b7e0e068d2 = $(`<div id="html_a996c7dff2b32f2a901b46b7e0e068d2" style="width: 100.0%; height: 100.0%;"><b>招呼站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州22路</div>`)[0];
+                popup_5700e64defc6346a234330726de7f4a0.setContent(html_a996c7dff2b32f2a901b46b7e0e068d2);
+            
+        
+
+        circle_marker_b52ce68dabc646308bda2ff15d08cf2d.bindPopup(popup_5700e64defc6346a234330726de7f4a0)
+        ;
+
+        
+    
+    
+            circle_marker_b52ce68dabc646308bda2ff15d08cf2d.bindTooltip(
+                `<div>
+                     [公交站] 招呼站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_75ad9a52849ed5509d5b31e8bd85d7d3 = L.circleMarker(
+                [31.038021, 108.355188],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_143ea4dd6c04722b212e606c0dfc9b7c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_66a207e28d0c31faf4f355c590c6bf92 = $(`<div id="html_66a207e28d0c31faf4f355c590c6bf92" style="width: 100.0%; height: 100.0%;"><b>舒家湾(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州22路</div>`)[0];
+                popup_143ea4dd6c04722b212e606c0dfc9b7c.setContent(html_66a207e28d0c31faf4f355c590c6bf92);
+            
+        
+
+        circle_marker_75ad9a52849ed5509d5b31e8bd85d7d3.bindPopup(popup_143ea4dd6c04722b212e606c0dfc9b7c)
+        ;
+
+        
+    
+    
+            circle_marker_75ad9a52849ed5509d5b31e8bd85d7d3.bindTooltip(
+                `<div>
+                     [公交站] 舒家湾(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc0bbfa150316f21e08052764f65da87 = L.circleMarker(
+                [31.149427, 108.366016],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_f952cbfe361c96bfe54fa561c7314b0c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2120631bf24c542f7f567cb2ef79daa2 = $(`<div id="html_2120631bf24c542f7f567cb2ef79daa2" style="width: 100.0%; height: 100.0%;"><b>汉丰八校(东行)(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州19路</div>`)[0];
+                popup_f952cbfe361c96bfe54fa561c7314b0c.setContent(html_2120631bf24c542f7f567cb2ef79daa2);
+            
+        
+
+        circle_marker_dc0bbfa150316f21e08052764f65da87.bindPopup(popup_f952cbfe361c96bfe54fa561c7314b0c)
+        ;
+
+        
+    
+    
+            circle_marker_dc0bbfa150316f21e08052764f65da87.bindTooltip(
+                `<div>
+                     [公交站] 汉丰八校(东行)(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3eb4a5851b8e35a6dfb7d803cace2110 = L.circleMarker(
+                [31.253342, 108.445518],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_c2b6bee91e0beabff32d265011e9ae98 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_700ba7f80237c860a31d7f9193d4d965 = $(`<div id="html_700ba7f80237c860a31d7f9193d4d965" style="width: 100.0%; height: 100.0%;"><b>欧华陶瓷一站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州10路</div>`)[0];
+                popup_c2b6bee91e0beabff32d265011e9ae98.setContent(html_700ba7f80237c860a31d7f9193d4d965);
+            
+        
+
+        circle_marker_3eb4a5851b8e35a6dfb7d803cace2110.bindPopup(popup_c2b6bee91e0beabff32d265011e9ae98)
+        ;
+
+        
+    
+    
+            circle_marker_3eb4a5851b8e35a6dfb7d803cace2110.bindTooltip(
+                `<div>
+                     [公交站] 欧华陶瓷一站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ad4fb98dadc3ccd8a45ea1e043c325f = L.circleMarker(
+                [31.222822, 108.426231],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_728f73930df066c58033c58e8bfe812a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fe69caa4e32a5274995f9e215df57817 = $(`<div id="html_fe69caa4e32a5274995f9e215df57817" style="width: 100.0%; height: 100.0%;"><b>滴水村三组站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州10路</div>`)[0];
+                popup_728f73930df066c58033c58e8bfe812a.setContent(html_fe69caa4e32a5274995f9e215df57817);
+            
+        
+
+        circle_marker_0ad4fb98dadc3ccd8a45ea1e043c325f.bindPopup(popup_728f73930df066c58033c58e8bfe812a)
+        ;
+
+        
+    
+    
+            circle_marker_0ad4fb98dadc3ccd8a45ea1e043c325f.bindTooltip(
+                `<div>
+                     [公交站] 滴水村三组站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cd191367b50c661d322b9b05f7483f46 = L.circleMarker(
+                [31.218168, 108.42418],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_ac4e9f4f25a3e7ac4e0483ac99abdd1d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3bd3fc70918b04d7c004e9e627895d0d = $(`<div id="html_3bd3fc70918b04d7c004e9e627895d0d" style="width: 100.0%; height: 100.0%;"><b>平安驾校站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州12路;开州21路</div>`)[0];
+                popup_ac4e9f4f25a3e7ac4e0483ac99abdd1d.setContent(html_3bd3fc70918b04d7c004e9e627895d0d);
+            
+        
+
+        circle_marker_cd191367b50c661d322b9b05f7483f46.bindPopup(popup_ac4e9f4f25a3e7ac4e0483ac99abdd1d)
+        ;
+
+        
+    
+    
+            circle_marker_cd191367b50c661d322b9b05f7483f46.bindTooltip(
+                `<div>
+                     [公交站] 平安驾校站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5006bfddbd21fdd6afacd7213bf1d025 = L.circleMarker(
+                [31.239987, 108.435911],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_5941f46db87f5ce7cdbe0c28495728fc = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2ae3e9341ab8f2c2e3221210b43011c5 = $(`<div id="html_2ae3e9341ab8f2c2e3221210b43011c5" style="width: 100.0%; height: 100.0%;"><b>光芒村四组(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州10路</div>`)[0];
+                popup_5941f46db87f5ce7cdbe0c28495728fc.setContent(html_2ae3e9341ab8f2c2e3221210b43011c5);
+            
+        
+
+        circle_marker_5006bfddbd21fdd6afacd7213bf1d025.bindPopup(popup_5941f46db87f5ce7cdbe0c28495728fc)
+        ;
+
+        
+    
+    
+            circle_marker_5006bfddbd21fdd6afacd7213bf1d025.bindTooltip(
+                `<div>
+                     [公交站] 光芒村四组(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d76a9301cd885b7ac349dddab1462a07 = L.circleMarker(
+                [31.154518, 108.363051],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_eb3eb096ed383645fa51491320453170 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_964321983780cebd3e8ae0907b62181c = $(`<div id="html_964321983780cebd3e8ae0907b62181c" style="width: 100.0%; height: 100.0%;"><b>职教中学一站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州8路</div>`)[0];
+                popup_eb3eb096ed383645fa51491320453170.setContent(html_964321983780cebd3e8ae0907b62181c);
+            
+        
+
+        circle_marker_d76a9301cd885b7ac349dddab1462a07.bindPopup(popup_eb3eb096ed383645fa51491320453170)
+        ;
+
+        
+    
+    
+            circle_marker_d76a9301cd885b7ac349dddab1462a07.bindTooltip(
+                `<div>
+                     [公交站] 职教中学一站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_449ec5e98601e067989bed399bcffa7b = L.circleMarker(
+                [31.158251, 108.383751],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_1a7a0a5214654a87b4ca95eebd1d2f45 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6dbc757e47b068d38c986be0372eb51e = $(`<div id="html_6dbc757e47b068d38c986be0372eb51e" style="width: 100.0%; height: 100.0%;"><b>汉丰三校站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州19路;开州8路</div>`)[0];
+                popup_1a7a0a5214654a87b4ca95eebd1d2f45.setContent(html_6dbc757e47b068d38c986be0372eb51e);
+            
+        
+
+        circle_marker_449ec5e98601e067989bed399bcffa7b.bindPopup(popup_1a7a0a5214654a87b4ca95eebd1d2f45)
+        ;
+
+        
+    
+    
+            circle_marker_449ec5e98601e067989bed399bcffa7b.bindTooltip(
+                `<div>
+                     [公交站] 汉丰三校站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_73dc3190348bd9201c2a9dfda2240903 = L.circleMarker(
+                [31.158012, 108.346387],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_46c7778a9cbaaa889ae2db2047dce5b1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8028c43797bb0f851dad8541a9365cac = $(`<div id="html_8028c43797bb0f851dad8541a9365cac" style="width: 100.0%; height: 100.0%;"><b>金科丰泰里站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州2路</div>`)[0];
+                popup_46c7778a9cbaaa889ae2db2047dce5b1.setContent(html_8028c43797bb0f851dad8541a9365cac);
+            
+        
+
+        circle_marker_73dc3190348bd9201c2a9dfda2240903.bindPopup(popup_46c7778a9cbaaa889ae2db2047dce5b1)
+        ;
+
+        
+    
+    
+            circle_marker_73dc3190348bd9201c2a9dfda2240903.bindTooltip(
+                `<div>
+                     [公交站] 金科丰泰里站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0fd9cecb0355fe2c6e2b1e5b43984399 = L.circleMarker(
+                [31.163572, 108.366276],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_84e0da16a4902d45535eabd3a263faff = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7656230f192cd27785267bd711ce819c = $(`<div id="html_7656230f192cd27785267bd711ce819c" style="width: 100.0%; height: 100.0%;"><b>平桥六支路站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州2路</div>`)[0];
+                popup_84e0da16a4902d45535eabd3a263faff.setContent(html_7656230f192cd27785267bd711ce819c);
+            
+        
+
+        circle_marker_0fd9cecb0355fe2c6e2b1e5b43984399.bindPopup(popup_84e0da16a4902d45535eabd3a263faff)
+        ;
+
+        
+    
+    
+            circle_marker_0fd9cecb0355fe2c6e2b1e5b43984399.bindTooltip(
+                `<div>
+                     [公交站] 平桥六支路站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c14b9e3333e11a27e5c9a0fb4f0eaad9 = L.circleMarker(
+                [31.16352, 108.381111],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_83886342c78c59281a2795e69f900224);
+        
+    
+        var popup_8bafc260d0d7fae861b11adea4295127 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_32d3970593173b2254d30d182ae96638 = $(`<div id="html_32d3970593173b2254d30d182ae96638" style="width: 100.0%; height: 100.0%;"><b>景苑南站(公交站)</b><br>类别: 公交站<br>行政区: 开州区<br>地址: 开州18路;开州4路</div>`)[0];
+                popup_8bafc260d0d7fae861b11adea4295127.setContent(html_32d3970593173b2254d30d182ae96638);
+            
+        
+
+        circle_marker_c14b9e3333e11a27e5c9a0fb4f0eaad9.bindPopup(popup_8bafc260d0d7fae861b11adea4295127)
+        ;
+
+        
+    
+    
+            circle_marker_c14b9e3333e11a27e5c9a0fb4f0eaad9.bindTooltip(
+                `<div>
+                     [公交站] 景苑南站(公交站)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
